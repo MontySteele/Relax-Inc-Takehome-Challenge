@@ -3,6 +3,8 @@
 ### Take home challenge summary.
 In this take-home challenge, I was given two data files, takehome_users.csv and takehome_user_engagement.csv, and asked to determine which features predict future user adoption. The first data file contains information on 12,000 users, while the second file contains user login information. I explored the datasets and cleaned the data of null values. Using the login information, I identified adopted users as those who logged in on three separate days in a 7-day period. I then created a random forest model and trained it on the data to predict user adoption. I examined the features of the model, looking into the features with highest importance as these should have the highest predictive power.
 
+The code I used for this project is available in a Jupyter Notebook titled 'relax takehome.ipynb'.
+
 ### Feature engineering
 
 After data cleaning, I saved my cleaned data as 'userdata_with_active_label.csv'. This dataset has the following features: 
@@ -49,3 +51,9 @@ I also looked into the creation_source feature to see if there was a meaningful 
 | Adopted users  | Unadopted users |
 | -------------  | -------------   |
 | ![Adopted user source breakdown.](graphs/engaged_user_source.png?raw=true "Adopted user source breakdown")  | ![Unadopted user source breakdown.](graphs/unengaged_user_source.png?raw=true "Unadopted user source breakdown")   |
+
+### Final thoughts
+
+I think that the principal approach to this project should be to find a predictive model which is easily explainable and investigate its feature importances, but the exact model could be any number of approaches. I attempted a Random Forest model first and received a sufficiently high accuracy to contininue on. I also performed a Principal Component Analysis which produced similar feature results. One could try various boosting methods as well.
+
+Given that the single strongest predictor of user adoption was the time of account creation, I think that further investigation should dig into various marketing approaches and look at their success rate over time or if the company's marketing approach has changed over time. The data gives fields for whether the users are receiving marketing emails but not enough specific data to try to identify what kinds of marketing emails are being sent or their content; this data would be useful to look for spikes in user adoption.

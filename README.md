@@ -43,3 +43,9 @@ As seen on the graph, the most predictive features were the creation_time and cr
 The creation_time field is a date identifying when the user first created an account. I sorted the accounts by creation date grouped the accounts into batches of 500, such that the firest group would have the 500 oldest accounts and so on. I then plotted the percent of users in each group who had become 'adopted' users and fit a linear regression to look for a simple trend. As seen below, I found that the average user adoption has gone up over time; newer users are more likely to adopt the product.
 
 ![% user adoption over time.](graphs/engage_pct_over_time.png?raw=true "Percent user adoption over time")
+
+I also looked into the creation_source feature to see if there was a meaningful difference in how adopted users found this produce vs unadopted users. As seen below, the pie charts for the two groups look very similar but there are meaningful differences; for example, 22% of adopted users were invited to create counts as gudest members of an organization, vs. 18% for unadopted users.
+
+| Adopted users  | Unadopted users |
+| -------------  | -------------   |
+| ![Adopted user source breakdown.](graphs/engaged_user_source.png?raw=true "Adopted user source breakdown")  | ![Unadopted user source breakdown.](graphs/unengaged_user_source.png?raw=true "Unadopted user source breakdown")   |

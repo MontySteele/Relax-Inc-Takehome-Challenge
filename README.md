@@ -44,7 +44,7 @@ The creation_time field is a date identifying when the user first created an acc
 
 ![% user adoption over time.](graphs/engage_pct_over_time.png?raw=true "Percent user adoption over time")
 
-I also looked into the creation_source feature to see if there was a meaningful difference in how adopted users found this produce vs unadopted users. As seen below, the pie charts for the two groups look very similar but there are meaningful differences; for example, 22% of adopted users were invited to create counts as gudest members of an organization, vs. 18% for unadopted users.
+I also looked into the creation_source feature to see if there was a meaningful difference in how adopted users found this produce vs unadopted users. As seen below, the pie charts for the two groups look very similar but there are meaningful differences; for example, 22% of adopted users were invited to create counts as guest members of an organization and were the 2nd-largest source, vs. 18% and the 3rd-largest source for unadopted users.
 
 | Adopted users  | Unadopted users |
 | -------------  | -------------   |

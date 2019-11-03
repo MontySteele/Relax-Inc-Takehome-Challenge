@@ -26,4 +26,4 @@ After data cleaning, I saved my cleaned data as 'userdata_with_active_label.csv'
 
 I trained a random forest model on this dataset and performed a grid search with varying estimators and max depth, using a 5-fold cross-validation and taking the average of the five test scores to find the best model. I reached ~96% accuracy, which seemed sufficient to think that my model was accurately predicting user adoption on this dataset. I then pulled out the feature importances of the features in this dataset (see below).
 
-![Feature importances, sorted.](graphs/'Feature importances_of_Random_Forest.png'?raw=true "Feature importances")
+![Feature importances, sorted.](graphs/Feature%20importances_of_Random_Forest.png?raw=true "Feature importances")
